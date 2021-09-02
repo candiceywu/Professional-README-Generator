@@ -4,7 +4,7 @@ const inquirer = require('inquirer');
 const util = require('util');
 
 // TODO: Create an array of questions for user input
-const questions = [
+// const questions = [
 
 inquirer
     .prompt([
@@ -25,18 +25,45 @@ inquirer
         },
         {
             type: 'input',
-            name: 'installation',
+            name: 'usage',
             message: 'Provide a brief description on the application\'s usage.',
         },
     ])
 
-];
+    // ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+    // TODO: Create a function to write README file
+    
+    function writeToFile(fileName, data) {
+        const filename = `README.md`;
 
-// TODO: Create a function to initialize app
-function init() { }
+        const { title, description, installation, usage } = data
 
-// Function call to initialize app
-init();
+        const readme =
+
+            `## <Your-Project-Title>
+            ${data.title}
+            
+            ## Description
+            ${data.description}
+            
+            ## Installation
+            ${data.installation}
+
+            ## Usage 
+            ${data.usage}
+            `
+    
+        // TODO: Create a function to initialize app
+        function init() { 
+            promptUser()
+            .then((answers) => writeFileAsync('README.md', writeToFile(answers)))
+            .then(() => console.log('Successfully wrote to README.md'))
+            .catch((err) => console.error(err));
+
+        }
+
+        // Function call to initialize app
+        init();
+
+    }
