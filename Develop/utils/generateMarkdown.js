@@ -22,6 +22,9 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
 
+  ## Table of Contents
+  ${data.tableOfContents}
+
   ## Installation
   ${data.installation}
 
@@ -33,7 +36,14 @@ function generateMarkdown(data) {
 
   ${renderLicenseLink(data.license)}
 
-  
+  ## Contributing
+  ${data.contributors}
+
+  ## Tests
+  ${data.tests}
+
+  ## Questions
+  ${data.questions}
 
 
 `;
