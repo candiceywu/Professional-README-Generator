@@ -18,7 +18,7 @@
   For installation, the user will use their command line (Terminal, Bash, etc.) and make sure they are accessing the correct index.js file that's being run. The user can then type in 'node index.js' in the command line to begin the prompt.
 
   ## Usage 
-  The application has questions that prompt the user in filling out information that is then populated into the README file for quick access and development. The link for the walk-through video that demonstrates the functionality of the README generator can be found [here](https://drive.google.com/file/d/1m5LpGIjY-uOfQVmaqAsBCPDy4rUpJBQ-/view). Please click the link to launch the walk-through video. 
+  The application has questions that prompt the user in filling out information that is then populated into the README file for quick access and development. The link for the walk-through video that demonstrates the functionality of the README generator can be found [here](https://youtu.be/7YLlyi68shs). Please click the link to launch the walk-through video. 
 
   ![Candice Wu's Professional README Generator can be run from the command line.](assets/images/screencapture.png)
   
