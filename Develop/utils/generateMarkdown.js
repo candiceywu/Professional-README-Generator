@@ -19,12 +19,6 @@ function renderLicenseSection(license) {
 };
 
 
-//section on contributors - if none, return an empty string
-// function contributing (contributors) {
-// if 
-// }
-
-
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
@@ -55,7 +49,7 @@ function generateMarkdown(data) {
 
 
   ## Contributing
-  ${data.contributors}
+ ${data.contributors}
 
   ## Tests
   ${data.tests}
