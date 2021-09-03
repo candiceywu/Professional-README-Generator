@@ -41,7 +41,7 @@ inquirer
             type: 'rawlist',
             name: 'license',
             message: 'Please select a license using the down-key.',
-            choices: ['MIT', 'GNU', 'Apache', 'BSD']
+            choices: ['MIT', 'GNU', 'GSD']
         },
         {
             type: 'input',
