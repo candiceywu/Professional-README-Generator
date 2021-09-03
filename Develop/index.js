@@ -40,18 +40,18 @@ inquirer
         {
             type: 'rawlist',
             name: 'license',
-            message: 'Please select a license.',
+            message: 'Please select a license using the down-key.',
             choices: ['MIT', 'GNU', 'Apache', 'BSD']
         },
         {
             type: 'input',
             name: 'contributors',
-            message: 'Please provide the names of any contributors. If this project had no other contributors, please leave this blank and hit enter.',
+            message: 'Please provide the names of any contributors. If this project had no other contributors, please hit enter.',
         },
         {
             type: 'input',
             name: 'tests',
-            message: '???',
+            message: 'Feel free to write tests for your application; you can provide examples on how to run them here.'
         },
     
 
