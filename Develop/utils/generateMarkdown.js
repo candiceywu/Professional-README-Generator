@@ -21,7 +21,9 @@ function renderLicenseSection(license) {
 
 
 //section on contributors - if none, return an empty string
-
+function contributing (contributors) {
+if 
+}
 
 
 // TODO: Create a function to generate markdown for README
@@ -65,9 +67,9 @@ function generateMarkdown(data) {
   ## Questions
   For any questions, please reach out via:
   
-  GitHub: ${data.username}
+  GitHub: ${data.username}; and
 
-  Email: ${data.email}
+  Email: ${data.email}.
 
 `;
 }
