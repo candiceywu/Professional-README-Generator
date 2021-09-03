@@ -7,7 +7,16 @@ const generateMarkdown = require('./utils/generateMarkdown');
 function init(){
 inquirer
     .prompt([
-
+        {
+            type: 'input',
+            name: 'username',
+            message: 'What is your GitHub username?',
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What is your email address?',
+        },
         {
             type: 'input',
             name: 'title',
@@ -34,7 +43,18 @@ inquirer
             message: 'Please select a license.',
             choices: ['MIT', 'GNU', 'Apache', 'BSD']
         },
-        
+        {
+            type: 'input',
+            name: 'contributors',
+            message: 'Please provide the names of any contributors. If this project had no other contributors, please leave this blank and hit enter.',
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: '???',
+        },
+    
+
     ])
 
         // TODO: Create a function to initialize app

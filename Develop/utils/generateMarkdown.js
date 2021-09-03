@@ -37,14 +37,15 @@ function generateMarkdown(data) {
   ${renderLicenseLink(data.license)}
 
   ## Contributing
-  ${data.contributors}
+  <${data.contributors.split(' ')}>
 
   ## Tests
   ${data.tests}
 
   ## Questions
-  ${data.questions}
-
+  For any questions, please reach out via:
+  GitHub: ${data.username}
+  Email: ${data.email}
 
 `;
 }
